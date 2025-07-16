@@ -1,0 +1,69 @@
+/* ...keep all your previous CSS... */
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.status-msg {
+  font-size: 0.9rem;
+  color: #0f0;
+}
+
+/* T&C section */
+.terms {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Spacer + fade-in still same */
+.spacer {
+  height: 100vh;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
